@@ -12,4 +12,4 @@ export const gameState = writable([
 ]);
 
 // export const word = writable(words[Math.floor(Math.random() * (list.length - 1))])
-export const word = writable('CHANT')
+export const word = writable('chant')

@@ -1,16 +1,26 @@
 <script>
     import { gameState, word } from '../stores'
     import { words } from '../words'
- 
+
+    export let setAlert
+
     let currentGuess = ''
     let guessNumber = 0
+    let won = false
 
     const validateGuess = guess => {
         if (guess.length == 5 && words.includes(guess.toLowerCase())) return true
+        else if (guess.length == 5) {
+            setAlert('Not in Word List')
+        } else if (words.includes(guess.toLowerCase())) {
+            setAlert('Not Enough Letters')
+        }
+
         return false
     }
 
     const submitGuess = (guess) => {
+        guess = guess.toLowerCase()
         for (let i=0; i<guess.length; i++) {
             if ($word.includes(guess[i])) {
                 if ($word[i] == guess[i]) {
@@ -22,21 +32,24 @@
                 $gameState[guessNumber][i][1] = '#353537'
             }
         }
-        currentGuess = ''
+        if (guess == $word) won = true
         if (guessNumber < 6) guessNumber += 1
+        currentGuess = ''
     }
     
     const handleLetterPressed = letter => {
-        if (letter == 'ENTER') {
-            if (validateGuess(currentGuess)) {
-                submitGuess(currentGuess)
+        if (!won) {
+            if (letter == 'ENTER') {
+                if (validateGuess(currentGuess)) {
+                    submitGuess(currentGuess)
+                }
+            } else if (letter == 'DEL') {
+                currentGuess = currentGuess.slice(0, -1)
+                $gameState[guessNumber][currentGuess.length][0] = ''
+            } else if ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.includes(letter) && currentGuess.length < 5) {
+                currentGuess += letter
+                $gameState[guessNumber][currentGuess.length - 1][0] = letter
             }
-        } else if (letter == 'DEL') {
-            currentGuess = currentGuess.slice(0, -1)
-            $gameState[guessNumber][currentGuess.length][0] = ''
-        } else if ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.includes(letter) && currentGuess.length < 5) {
-            currentGuess += letter
-            $gameState[guessNumber][currentGuess.length - 1][0] = letter
         }
     }
 </script>

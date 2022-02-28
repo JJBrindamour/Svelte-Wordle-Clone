@@ -1,11 +1,25 @@
 <script>
-	import Header from "./components/Header.svelte";
-	import Keyboard from "./components/Keyboard.svelte";
+	import Header from "./components/Header.svelte"
+	import Keyboard from "./components/Keyboard.svelte"
 	import { gameState } from "./stores"
+
+	let active = false
+	let message = ''
+	const setAlert = msg => {
+		active = true
+		message = msg
+
+		setTimeout(() => active = false, 2000);
+	}
 </script>
 
 <main>
-	<Header></Header>
+	<Header />
+	
+	<div class="alert-container">
+		<p class="alert" style={`display: ${active ? 'block' : 'none'}`}>{message}</p>
+	</div>
+
 	<div class="game">
 		<div class="container">
 			{#each $gameState as row}
@@ -15,10 +29,27 @@
 			{/each}
 		</div>
 	</div>
-	<div class="keyboard-container"><Keyboard gameEls /></div>
+	<div class="keyboard-container"><Keyboard alert /></div>
 </main> 
 
 <style>
+	.alert-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .alert{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: #121213;
+    position: absolute;
+    top: 54px;
+    border-radius: 8px;
+  }
+	
 	.game {
 		display: flex;
 		justify-content: center;
@@ -51,6 +82,5 @@
 		grid-gap: 10px;
 		justify-content: center;
 		align-content: center;
-		max-width: 350px;
 	}
 </style>
