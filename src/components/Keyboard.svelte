@@ -6,7 +6,7 @@
     let guessNumber = 0
 
     const validateGuess = guess => {
-        if (guess.length == 4 && words.includes(guess)) return true
+        if (guess.length == 5 && words.includes(guess.toLowerCase())) return true
         return false
     }
 
