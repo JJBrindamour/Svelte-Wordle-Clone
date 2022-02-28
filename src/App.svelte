@@ -8,33 +8,9 @@
 	<Header></Header>
 	<div class="game">
 		<div class="container">
-			<!-- {#each $gameState[0] as letter, i}
-				<p class="item">{letter}</p>
-			{/each}
-
-			{#each $gameState[1] as letter, i}
-				<p class="item">{letter}</p>
-			{/each}
-
-			{#each $gameState[2] as letter, i}
-				<p class="item">{letter}</p>
-			{/each}
-
-			{#each $gameState[3] as letter, i}
-				<p class="item">{letter}</p>
-			{/each}
-
-			{#each $gameState[4] as letter, i}
-				<p class="item">{letter}</p>
-			{/each}
-
-			{#each $gameState[5] as letter, i}
-				<p class="item">{letter}</p>
-			{/each} -->
-
 			{#each $gameState as row}
 				{#each row as el}
-					<p class="item" style='background-color: {el[1]}'></p>
+					<p class="item" style='background-color: {el[1]}; border: 2px solid {el[1] != 'transparent' ? el[1] : '#353537'};'>{el[0]}</p>
 				{/each}
 			{/each}
 		</div>
@@ -57,6 +33,7 @@
 	.item {
 		background-color: transparent;
 		border: 2px solid #353537;
+		font-size: 32px;
 		font-weight: bold;
 		color: whitesmoke;
 		text-align: center;
