@@ -1,23 +1,25 @@
 <script>
     import { gameState, word } from '../stores'
-
+    import { words } from '../words'
+ 
     let currentGuess = ''
     let guessNumber = 0
 
     const validateGuess = guess => {
-        return true
+        if (guess.length == 5 && words.includes(guess.toLowerCase())) return true
+        return false
     }
 
     const submitGuess = (guess) => {
-        for (const letter in guess) {
-            if ($word.includes(letter)) {
-                if ($word[guess.indexOf(letter)] == letter) {
-                    gameEls[guessNumber * 5 + guess.indexOf(letter)].style = 'background-color: #538d4e'
-                    console.log('Right ', letter)
+        for (let i=0; i<guess.length; i++) {
+            if ($word.includes(guess[i])) {
+                if ($word[i] == guess[i]) {
+                    $gameState[guessNumber][i][1] = '#538d4e'
                 } else {
-                    gameEls[guessNumber * 5 + guess.indexOf(letter)].style = 'background-color: #b59f3b'
-                    console.log('Wrong ', letter)
+                    $gameState[guessNumber][i][1] = '#b59f3b'
                 }
+            } else {
+                $gameState[guessNumber][i][1] = '#353537'
             }
         }
         currentGuess = ''
@@ -31,10 +33,10 @@
             }
         } else if (letter == 'DEL') {
             currentGuess = currentGuess.slice(0, -1)
-            $gameState[guessNumber][currentGuess.length] = ''
+            $gameState[guessNumber][currentGuess.length][0] = ''
         } else if ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.includes(letter) && currentGuess.length < 5) {
             currentGuess += letter
-            $gameState[guessNumber][currentGuess.length - 1] = letter
+            $gameState[guessNumber][currentGuess.length - 1][0] = letter
         }
     }
 </script>
