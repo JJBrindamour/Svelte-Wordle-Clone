@@ -1,6 +1,6 @@
 <main>
     <div class="head">
-        <h1 class="title">Wordle</h1>
+        <h1 class="title">Wordle Clone</h1>
     </div>
     <hr>
 </main>
