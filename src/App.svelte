@@ -3,13 +3,14 @@
 	import Keyboard from "./components/Keyboard.svelte"
 	import { gameState } from "./stores"
 
-	let active = false
+	let active
 	let message = ''
-	const setAlert = msg => {
+	const setAlert = (msg, time=2000) => {
 		active = true
 		message = msg
+		console.log(msg)
 
-		setTimeout(() => active = false, 2000);
+		setTimeout(() => active = false, time);
 	}
 </script>
 
@@ -29,10 +30,17 @@
 			{/each}
 		</div>
 	</div>
-	<div class="keyboard-container"><Keyboard alert /></div>
+	<div class="keyboard-container"><Keyboard setAlert={setAlert} /></div>
 </main> 
 
 <style>
+	main {
+		height: 97.45vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
 	.alert-container {
     display: flex;
     justify-content: center;
@@ -59,12 +67,13 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: 45px;
 	}
 	.item {
 		background-color: transparent;
 		border: 2px solid #353537;
-		font-size: 32px;
+		font-size: 4.75vh;
+		min-height: 1.5em;
+		min-width: 1.5em;
 		font-weight: bold;
 		color: whitesmoke;
 		text-align: center;
@@ -73,14 +82,16 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin: 0;
 	}
 
 	.container {
 		display: grid;
-		grid-template-rows: repeat(6, 58px);
-		grid-template-columns: repeat(5, 58px);
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 		grid-gap: 10px;
 		justify-content: center;
 		align-content: center;
+		margin-bottom: 10px;
 	}
 </style>

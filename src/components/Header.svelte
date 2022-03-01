@@ -1,7 +1,9 @@
-<div class="head">
-    <h1 class="title">Wordle</h1>
-</div>
-<hr>
+<main>
+    <div class="head">
+        <h1 class="title">Wordle</h1>
+    </div>
+    <hr>
+</main>
 
 <style>
     .head {

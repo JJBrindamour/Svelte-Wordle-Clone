@@ -11,5 +11,6 @@ export const gameState = writable([
 	[['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent']],
 ]);
 
-// export const word = writable(words[Math.floor(Math.random() * (list.length - 1))])
-export const word = writable('chant')
+export const letterColors = writable(['#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384'])
+
+export const word = writable(words[Math.floor(Math.random() * (words.length - 1))])
