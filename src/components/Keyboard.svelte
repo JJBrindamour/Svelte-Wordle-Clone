@@ -109,7 +109,8 @@
         if ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.includes(e.key) && currentGuess.length < 5) handleLetterPressed(e.key.toUpperCase())
         else if (e.key == 'Enter') handleLetterPressed('ENTER')
         else if (e.key == 'Backspace') handleLetterPressed('DEL')
-    }} />
+    }} 
+/>
 
 <style>
     .keyboard {

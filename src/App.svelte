@@ -8,8 +8,7 @@
 	const setAlert = (msg, time=2000) => {
 		active = true
 		message = msg
-		console.log(msg)
-
+		
 		setTimeout(() => active = false, time);
 	}
 </script>
