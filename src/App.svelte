@@ -4,18 +4,18 @@
 	import Overlay from "./components/Overlay.svelte";
 	import Alert from "./components/Alert.svelte"
 	import { gameState, guessNumber, currentGuess, letterColors, word } from "./stores/game"
+	import { won } from './stores/user'
 	import { words } from "./words"
 
 	import { onMount } from "svelte"
 
 	let overlayActive = false
-	let won = false
 
 	const toggleOverlay = () => {
 		overlayActive = !overlayActive
 	}
 
-	onMount(() => {if ($currentGuess == $word.toUpperCase()); setTimeout(toggleOverlay, 2500)})
+	onMount(() => {if ($won) setTimeout(toggleOverlay, 2500)})
 
 	const resetGame = () => {
 		$gameState = [
@@ -31,6 +31,7 @@
 		$word = words[Math.floor(Math.random() * (words.length - 1))]
 		$currentGuess = ''
   	$guessNumber = 0
+		$won = false
 	}
 
 	let alertActive = false
@@ -57,7 +58,7 @@
 			{/each}
 		</div>
 	</div>
-	<div class="keyboard-container"><Keyboard on:disable-alert={() => alertActive = false} on:won-game={() => won = true} on:toggle-overlay={toggleOverlay} on:alert={e => setAlert(e.detail.msg, e.detail.time)} /></div>
+	<div class="keyboard-container"><Keyboard on:disable-alert={() => alertActive = false} on:toggle-overlay={toggleOverlay} on:alert={e => setAlert(e.detail.msg, e.detail.time)} /></div>
 </main> 
 
 <style>

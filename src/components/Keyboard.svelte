@@ -1,11 +1,10 @@
 <script>
     import { gameState, word, letterColors, currentGuess, guessNumber } from '../stores/game'
+    import { won } from '../stores/user'
     import { words } from '../words'
 
     import { createEventDispatcher } from 'svelte'
     const dispatch = createEventDispatcher()
-
-    let won = false
 
     const validateGuess = guess => {
         if (guess.length == 5 && words.includes(guess.toLowerCase())) return true
@@ -40,8 +39,7 @@
         if ($currentGuess == $word.toUpperCase()) {
             dispatch('alert', {msg: 'Splendid'})
             dispatch('toggle-overlay')
-            dispatch('won-game')
-            won = true
+            $won = true
         }
 
         if ($guessNumber < 5) $guessNumber += 1
@@ -53,7 +51,7 @@
     }
     
     const handleLetterPressed = letter => {
-        if (!won) {
+        if (!$won) {
             if (letter == 'ENTER') {
                 if (validateGuess($currentGuess)) {
                     submitGuess($currentGuess)
