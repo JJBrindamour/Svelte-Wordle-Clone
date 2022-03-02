@@ -1,19 +1,18 @@
 <script>
-    import { gameState, word, letterColors } from '../stores'
+    import { gameState, word, letterColors, currentGuess, guessNumber } from '../stores/game'
     import { words } from '../words'
 
-    export let setAlert
+    import { createEventDispatcher } from 'svelte'
+    const dispatch = createEventDispatcher()
 
-    let currentGuess = ''
-    let guessNumber = 0
-    let won = false
+    $: won = $currentGuess == word
 
     const validateGuess = guess => {
         if (guess.length == 5 && words.includes(guess.toLowerCase())) return true
         else if (guess.length == 5) {
-            setAlert('Not in Word List')
+            dispatch('alert', {msg: 'Not in Word List'})
         } else if (guess.length < 5) {
-            setAlert('Not Enough Letters')
+            dispatch('alert', {msg: 'Not Enough Letters'})
         }
 
         return false
@@ -31,31 +30,37 @@
             }
             
             if (indices.length > 0) {
-                if (indices.includes(i)) $letterColors[qwertyLets.indexOf(guess[i])] = $gameState[guessNumber][i][1] = '#538d4e'
-                else if(guess.indexOf(guess[i]) == i) $letterColors[qwertyLets.indexOf(guess[i])] = $gameState[guessNumber][i][1] = '#b59f3b'
-                else $letterColors[qwertyLets.indexOf(guess[i])] = $gameState[guessNumber][i][1] = '#353537'
-            } else $letterColors[qwertyLets.indexOf(guess[i])] = $gameState[guessNumber][i][1] = '#353537'
+                if (indices.includes(i)) $letterColors[qwertyLets.indexOf(guess[i])] = $gameState[$guessNumber][i][1] = '#538d4e'
+                else if(guess.indexOf(guess[i]) == i) $letterColors[qwertyLets.indexOf(guess[i])] = $gameState[$guessNumber][i][1] = '#b59f3b'
+                else $letterColors[qwertyLets.indexOf(guess[i])] = $gameState[$guessNumber][i][1] = '#353537'
+            } else $letterColors[qwertyLets.indexOf(guess[i])] = $gameState[$guessNumber][i][1] = '#353537'
         }
 
 
-        if (guess == $word) won = true
-        if (guessNumber < 5) guessNumber += 1
-        else setAlert(`The Word Was: ${$word.toUpperCase()}`, 5000)
-        currentGuess = ''
+        if (won) {
+            dispatch('alert', {text: 'Splendid'})
+        }
+        if ($guessNumber < 5) $guessNumber += 1
+        else {
+            dispatch('alert', {msg: `The Word Was: ${$word.toUpperCase()}`, time: 5000})
+            dispatch('toggle-overlay')
+            console.log(won)
+        }
+        $currentGuess = ''
     }
     
     const handleLetterPressed = letter => {
         if (!won) {
             if (letter == 'ENTER') {
-                if (validateGuess(currentGuess)) {
-                    submitGuess(currentGuess)
+                if (validateGuess($currentGuess)) {
+                    submitGuess($currentGuess)
                 }
             } else if (letter == 'DEL') {
-                currentGuess = currentGuess.slice(0, -1)
-                $gameState[guessNumber][currentGuess.length][0] = ''
-            } else if ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.includes(letter) && currentGuess.length < 5) {
-                currentGuess += letter
-                $gameState[guessNumber][currentGuess.length - 1][0] = letter
+                $currentGuess = $currentGuess.slice(0, -1)
+                $gameState[$guessNumber][$currentGuess.length][0] = ''
+            } else if ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.includes(letter) && $currentGuess.length < 5) {
+                $currentGuess += letter
+                $gameState[$guessNumber][$currentGuess.length - 1][0] = letter
             }
         }
     }
@@ -104,9 +109,9 @@
     </div>
 
 </main>
-<svelte:window 
+<svelte:window
     on:keydown={e => {
-        if ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.includes(e.key) && currentGuess.length < 5) handleLetterPressed(e.key.toUpperCase())
+        if ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.includes(e.key) && $currentGuess.length < 5) handleLetterPressed(e.key.toUpperCase())
         else if (e.key == 'Enter') handleLetterPressed('ENTER')
         else if (e.key == 'Backspace') handleLetterPressed('DEL')
     }} 

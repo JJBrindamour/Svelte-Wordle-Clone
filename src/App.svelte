@@ -1,24 +1,45 @@
 <script>
 	import Header from "./components/Header.svelte"
 	import Keyboard from "./components/Keyboard.svelte"
-	import { gameState } from "./stores"
+	import Overlay from "./components/Overlay.svelte";
+	import Alert from "./components/Alert.svelte"
+	import { gameState, guessNumber, currentGuess } from "./stores/game"
 
-	let active
-	let message = ''
-	const setAlert = (msg, time=2000) => {
-		active = true
-		message = msg
+	let overlayActive = false
+
+
+	const toggleOverlay = () => {
+		overlayActive = !overlayActive
+	}
+
+	const resetGame = () => {
+		$gameState = [
+			[['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent']],	
+			[['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent']],
+			[['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent']],
+			[['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent']],
+			[['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent']],
+			[['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent']],
+		]
 		
-		setTimeout(() => active = false, time);
+		$currentGuess = ''
+  	$guessNumber = 0
+	}
+
+	let alertActive = false
+	let alertMessage = ''
+	const setAlert = (msg, time=2000) => {
+		alertActive = true
+		alertMessage = msg
+		
+		setTimeout(() => alertActive = false, time);
 	}
 </script>
 
 <main>
-	<Header />
-	
-	<div class="alert-container">
-		<p class="alert" style={`display: ${active ? 'block' : 'none'}`}>{message}</p>
-	</div>
+	<Overlay on:alert={e => setAlert(e.detail.msg, e.detail.time)} on:reset-game={resetGame} on:toggle={toggleOverlay} {overlayActive} />
+	<Header on:toggle-overlay={toggleOverlay} />
+	<Alert {alertActive} {alertMessage} />
 
 	<div class="game">
 		<div class="container">
@@ -29,7 +50,7 @@
 			{/each}
 		</div>
 	</div>
-	<div class="keyboard-container"><Keyboard setAlert={setAlert} /></div>
+	<div class="keyboard-container"><Keyboard on:disable-alert={() => alertActive = false} on:toggle-overlay={toggleOverlay} on:alert={e => setAlert(e.detail.msg, e.detail.time)} /></div>
 </main> 
 
 <style>
@@ -39,23 +60,6 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
-
-	.alert-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .alert{
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: white;
-    color: #121213;
-    position: absolute;
-    top: 54px;
-    border-radius: 8px;
-  }
 	
 	.game {
 		display: flex;
