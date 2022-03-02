@@ -6,9 +6,10 @@
   const dispatch = createEventDispatcher()
 
   export let overlayActive
+  export let won
 
   const handleNewWord = () => {
-    if ($currentGuess != $word.toUpperCase()) {dispatch('alert', {msg: `The Word Was: ${$word.toUpperCase()}`, time: 3000})}
+    if (!won) {dispatch('alert', {msg: `The Word Was: ${$word.toUpperCase()}`, time: 3000})}
     dispatch('toggle')
     dispatch('reset-game')
   }

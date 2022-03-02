@@ -40,6 +40,7 @@
         if ($currentGuess == $word.toUpperCase()) {
             dispatch('alert', {msg: 'Splendid'})
             dispatch('toggle-overlay')
+            dispatch('won-game')
             won = true
         }
 

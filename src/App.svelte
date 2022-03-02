@@ -9,6 +9,7 @@
 	import { onMount } from "svelte"
 
 	let overlayActive = false
+	let won = false
 
 	const toggleOverlay = () => {
 		overlayActive = !overlayActive
@@ -43,7 +44,7 @@
 </script>
 
 <main>
-	<Overlay on:alert={e => setAlert(e.detail.msg, e.detail.time)} on:reset-game={resetGame} on:toggle={toggleOverlay} {overlayActive} />
+	<Overlay on:alert={e => setAlert(e.detail.msg, e.detail.time)} on:reset-game={resetGame} on:toggle={toggleOverlay} {overlayActive} {won} />
 	<Header on:toggle-overlay={toggleOverlay} />
 	<Alert {alertActive} {alertMessage} />
 
@@ -56,7 +57,7 @@
 			{/each}
 		</div>
 	</div>
-	<div class="keyboard-container"><Keyboard on:disable-alert={() => alertActive = false} on:toggle-overlay={toggleOverlay} on:alert={e => setAlert(e.detail.msg, e.detail.time)} /></div>
+	<div class="keyboard-container"><Keyboard on:disable-alert={() => alertActive = false} on:won-game={() => won = true} on:toggle-overlay={toggleOverlay} on:alert={e => setAlert(e.detail.msg, e.detail.time)} /></div>
 </main> 
 
 <style>

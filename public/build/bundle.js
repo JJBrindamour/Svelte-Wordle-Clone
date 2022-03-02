@@ -13839,112 +13839,112 @@ var app = (function () {
     			path = svg_element("path");
     			attr_dev(p0, "class", "key svelte-ee2vbe");
     			attr_dev(p0, "style", p0_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][0]);
-    			add_location(p0, file$3, 72, 8, 2702);
+    			add_location(p0, file$3, 73, 8, 2735);
     			attr_dev(p1, "class", "key svelte-ee2vbe");
     			attr_dev(p1, "style", p1_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][1]);
-    			add_location(p1, file$3, 73, 8, 2836);
+    			add_location(p1, file$3, 74, 8, 2869);
     			attr_dev(p2, "class", "key svelte-ee2vbe");
     			attr_dev(p2, "style", p2_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][2]);
-    			add_location(p2, file$3, 74, 8, 2970);
+    			add_location(p2, file$3, 75, 8, 3003);
     			attr_dev(p3, "class", "key svelte-ee2vbe");
     			attr_dev(p3, "style", p3_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][3]);
-    			add_location(p3, file$3, 75, 8, 3104);
+    			add_location(p3, file$3, 76, 8, 3137);
     			attr_dev(p4, "class", "key svelte-ee2vbe");
     			attr_dev(p4, "style", p4_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][4]);
-    			add_location(p4, file$3, 76, 8, 3238);
+    			add_location(p4, file$3, 77, 8, 3271);
     			attr_dev(p5, "class", "key svelte-ee2vbe");
     			attr_dev(p5, "style", p5_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][5]);
-    			add_location(p5, file$3, 77, 8, 3372);
+    			add_location(p5, file$3, 78, 8, 3405);
     			attr_dev(p6, "class", "key svelte-ee2vbe");
     			attr_dev(p6, "style", p6_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][6]);
-    			add_location(p6, file$3, 78, 8, 3506);
+    			add_location(p6, file$3, 79, 8, 3539);
     			attr_dev(p7, "class", "key svelte-ee2vbe");
     			attr_dev(p7, "style", p7_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][7]);
-    			add_location(p7, file$3, 79, 8, 3640);
+    			add_location(p7, file$3, 80, 8, 3673);
     			attr_dev(p8, "class", "key svelte-ee2vbe");
     			attr_dev(p8, "style", p8_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][8]);
-    			add_location(p8, file$3, 80, 8, 3774);
+    			add_location(p8, file$3, 81, 8, 3807);
     			attr_dev(p9, "class", "key svelte-ee2vbe");
     			attr_dev(p9, "style", p9_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][9]);
-    			add_location(p9, file$3, 81, 8, 3908);
+    			add_location(p9, file$3, 82, 8, 3941);
     			attr_dev(div0, "class", "row svelte-ee2vbe");
     			attr_dev(div0, "id", "row-one");
-    			add_location(div0, file$3, 71, 4, 2663);
+    			add_location(div0, file$3, 72, 4, 2696);
     			attr_dev(p10, "class", "key svelte-ee2vbe");
     			attr_dev(p10, "style", p10_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][10]);
-    			add_location(p10, file$3, 85, 8, 4089);
+    			add_location(p10, file$3, 86, 8, 4122);
     			attr_dev(p11, "class", "key svelte-ee2vbe");
     			attr_dev(p11, "style", p11_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][11]);
-    			add_location(p11, file$3, 86, 8, 4224);
+    			add_location(p11, file$3, 87, 8, 4257);
     			attr_dev(p12, "class", "key svelte-ee2vbe");
     			attr_dev(p12, "style", p12_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][12]);
-    			add_location(p12, file$3, 87, 8, 4359);
+    			add_location(p12, file$3, 88, 8, 4392);
     			attr_dev(p13, "class", "key svelte-ee2vbe");
     			attr_dev(p13, "style", p13_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][13]);
-    			add_location(p13, file$3, 88, 8, 4494);
+    			add_location(p13, file$3, 89, 8, 4527);
     			attr_dev(p14, "class", "key svelte-ee2vbe");
     			attr_dev(p14, "style", p14_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][14]);
-    			add_location(p14, file$3, 89, 8, 4629);
+    			add_location(p14, file$3, 90, 8, 4662);
     			attr_dev(p15, "class", "key svelte-ee2vbe");
     			attr_dev(p15, "style", p15_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][15]);
-    			add_location(p15, file$3, 90, 8, 4764);
+    			add_location(p15, file$3, 91, 8, 4797);
     			attr_dev(p16, "class", "key svelte-ee2vbe");
     			attr_dev(p16, "style", p16_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][16]);
-    			add_location(p16, file$3, 91, 8, 4899);
+    			add_location(p16, file$3, 92, 8, 4932);
     			attr_dev(p17, "class", "key svelte-ee2vbe");
     			attr_dev(p17, "style", p17_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][17]);
-    			add_location(p17, file$3, 92, 8, 5034);
+    			add_location(p17, file$3, 93, 8, 5067);
     			attr_dev(p18, "class", "key svelte-ee2vbe");
     			attr_dev(p18, "style", p18_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][18]);
-    			add_location(p18, file$3, 93, 8, 5169);
+    			add_location(p18, file$3, 94, 8, 5202);
     			attr_dev(div1, "class", "row svelte-ee2vbe");
     			attr_dev(div1, "id", "row-two");
-    			add_location(div1, file$3, 84, 4, 4050);
+    			add_location(div1, file$3, 85, 4, 4083);
     			attr_dev(p19, "class", "key svelte-ee2vbe");
     			set_style(p19, "background-color", "#818384");
     			attr_dev(p19, "id", "enter");
-    			add_location(p19, file$3, 97, 8, 5353);
+    			add_location(p19, file$3, 98, 8, 5386);
     			attr_dev(p20, "class", "key svelte-ee2vbe");
     			attr_dev(p20, "style", p20_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][19]);
-    			add_location(p20, file$3, 98, 8, 5492);
+    			add_location(p20, file$3, 99, 8, 5525);
     			attr_dev(p21, "class", "key svelte-ee2vbe");
     			attr_dev(p21, "style", p21_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][20]);
-    			add_location(p21, file$3, 99, 8, 5627);
+    			add_location(p21, file$3, 100, 8, 5660);
     			attr_dev(p22, "class", "key svelte-ee2vbe");
     			attr_dev(p22, "style", p22_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][21]);
-    			add_location(p22, file$3, 100, 8, 5762);
+    			add_location(p22, file$3, 101, 8, 5795);
     			attr_dev(p23, "class", "key svelte-ee2vbe");
     			attr_dev(p23, "style", p23_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][22]);
-    			add_location(p23, file$3, 101, 8, 5897);
+    			add_location(p23, file$3, 102, 8, 5930);
     			attr_dev(p24, "class", "key svelte-ee2vbe");
     			attr_dev(p24, "style", p24_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][23]);
-    			add_location(p24, file$3, 102, 8, 6032);
+    			add_location(p24, file$3, 103, 8, 6065);
     			attr_dev(p25, "class", "key svelte-ee2vbe");
     			attr_dev(p25, "style", p25_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][24]);
-    			add_location(p25, file$3, 103, 8, 6167);
+    			add_location(p25, file$3, 104, 8, 6200);
     			attr_dev(p26, "class", "key svelte-ee2vbe");
     			attr_dev(p26, "style", p26_style_value = 'background-color: ' + /*$letterColors*/ ctx[1][25]);
-    			add_location(p26, file$3, 104, 8, 6302);
+    			add_location(p26, file$3, 105, 8, 6335);
     			attr_dev(path, "stroke-linecap", "round");
     			attr_dev(path, "stroke-linejoin", "round");
     			attr_dev(path, "stroke-width", "2");
     			attr_dev(path, "d", "M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z");
-    			add_location(path, file$3, 107, 16, 6696);
+    			add_location(path, file$3, 108, 16, 6729);
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "class", "backspace svelte-ee2vbe");
     			attr_dev(svg, "fill", "none");
     			attr_dev(svg, "viewBox", "0 0 24 24");
     			attr_dev(svg, "stroke", "currentColor");
-    			add_location(svg, file$3, 106, 12, 6567);
+    			add_location(svg, file$3, 107, 12, 6600);
     			attr_dev(p27, "class", "key svelte-ee2vbe");
     			set_style(p27, "background-color", "#818384");
     			attr_dev(p27, "id", "del");
-    			add_location(p27, file$3, 105, 8, 6437);
+    			add_location(p27, file$3, 106, 8, 6470);
     			attr_dev(div2, "class", "row svelte-ee2vbe");
     			attr_dev(div2, "id", "row-three");
-    			add_location(div2, file$3, 96, 4, 5312);
+    			add_location(div2, file$3, 97, 4, 5345);
     			attr_dev(main, "class", "keyboard svelte-ee2vbe");
-    			add_location(main, file$3, 70, 0, 2635);
+    			add_location(main, file$3, 71, 0, 2668);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -14251,6 +14251,7 @@ var app = (function () {
     		if ($currentGuess == $word.toUpperCase()) {
     			dispatch('alert', { msg: 'Splendid' });
     			dispatch('toggle-overlay');
+    			dispatch('won-game');
     			won = true;
     		}
 
@@ -14513,51 +14514,51 @@ var app = (function () {
     			attr_dev(path, "stroke-linejoin", "round");
     			attr_dev(path, "stroke-width", "2");
     			attr_dev(path, "d", "M6 18L18 6M6 6l12 12");
-    			add_location(path, file$2, 20, 8, 754);
+    			add_location(path, file$2, 21, 8, 739);
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "class", "x svelte-8csr08");
     			attr_dev(svg, "fill", "none");
     			attr_dev(svg, "viewBox", "0 0 24 24");
     			attr_dev(svg, "stroke", "currentColor");
-    			add_location(svg, file$2, 19, 6, 605);
+    			add_location(svg, file$2, 20, 6, 590);
     			attr_dev(p0, "class", "stats-head svelte-8csr08");
-    			add_location(p0, file$2, 23, 6, 872);
+    			add_location(p0, file$2, 24, 6, 857);
     			attr_dev(p1, "class", "big svelte-8csr08");
-    			add_location(p1, file$2, 27, 10, 973);
+    			add_location(p1, file$2, 28, 10, 958);
     			attr_dev(p2, "class", "small svelte-8csr08");
-    			add_location(p2, file$2, 28, 10, 1031);
+    			add_location(p2, file$2, 29, 10, 1016);
     			attr_dev(div0, "class", "stat svelte-8csr08");
-    			add_location(div0, file$2, 26, 8, 944);
+    			add_location(div0, file$2, 27, 8, 929);
     			attr_dev(p3, "class", "big svelte-8csr08");
-    			add_location(p3, file$2, 32, 10, 1112);
+    			add_location(p3, file$2, 33, 10, 1097);
     			attr_dev(p4, "class", "small svelte-8csr08");
-    			add_location(p4, file$2, 33, 10, 1199);
+    			add_location(p4, file$2, 34, 10, 1184);
     			attr_dev(div1, "class", "stat svelte-8csr08");
-    			add_location(div1, file$2, 31, 8, 1083);
+    			add_location(div1, file$2, 32, 8, 1068);
     			attr_dev(p5, "class", "big svelte-8csr08");
-    			add_location(p5, file$2, 37, 10, 1279);
-    			add_location(br0, file$2, 38, 34, 1349);
+    			add_location(p5, file$2, 38, 10, 1264);
+    			add_location(br0, file$2, 39, 34, 1334);
     			attr_dev(p6, "class", "small svelte-8csr08");
-    			add_location(p6, file$2, 38, 10, 1325);
+    			add_location(p6, file$2, 39, 10, 1310);
     			attr_dev(div2, "class", "stat svelte-8csr08");
-    			add_location(div2, file$2, 36, 8, 1250);
+    			add_location(div2, file$2, 37, 8, 1235);
     			attr_dev(p7, "class", "big svelte-8csr08");
-    			add_location(p7, file$2, 42, 10, 1417);
-    			add_location(br1, file$2, 43, 30, 1483);
+    			add_location(p7, file$2, 43, 10, 1402);
+    			add_location(br1, file$2, 44, 30, 1468);
     			attr_dev(p8, "class", "small svelte-8csr08");
-    			add_location(p8, file$2, 43, 10, 1463);
+    			add_location(p8, file$2, 44, 10, 1448);
     			attr_dev(div3, "class", "stat svelte-8csr08");
-    			add_location(div3, file$2, 41, 8, 1388);
+    			add_location(div3, file$2, 42, 8, 1373);
     			attr_dev(div4, "class", "stats svelte-8csr08");
-    			add_location(div4, file$2, 25, 6, 916);
+    			add_location(div4, file$2, 26, 6, 901);
     			attr_dev(p9, "class", "btn svelte-8csr08");
-    			add_location(p9, file$2, 46, 6, 1532);
+    			add_location(p9, file$2, 47, 6, 1517);
     			attr_dev(div5, "class", "res svelte-8csr08");
-    			add_location(div5, file$2, 18, 4, 581);
+    			add_location(div5, file$2, 19, 4, 566);
     			attr_dev(div6, "class", "container svelte-8csr08");
-    			add_location(div6, file$2, 17, 2, 553);
+    			add_location(div6, file$2, 18, 2, 538);
     			attr_dev(main, "style", main_style_value = `display: ${/*overlayActive*/ ctx[0] ? 'block' : 'none'};`);
-    			add_location(main, file$2, 16, 0, 488);
+    			add_location(main, file$2, 17, 0, 473);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -14606,7 +14607,7 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(svg, "click", /*click_handler*/ ctx[7], false, false, false),
+    					listen_dev(svg, "click", /*click_handler*/ ctx[8], false, false, false),
     					listen_dev(p9, "click", /*handleNewWord*/ ctx[6], false, false, false)
     				];
 
@@ -14645,15 +14646,12 @@ var app = (function () {
 
     function instance$2($$self, $$props, $$invalidate) {
     	let $word;
-    	let $currentGuess;
     	let $games;
     	let $wonCount;
     	let $currentStreak;
     	let $highestStreak;
     	validate_store(word, 'word');
-    	component_subscribe($$self, word, $$value => $$invalidate(8, $word = $$value));
-    	validate_store(currentGuess, 'currentGuess');
-    	component_subscribe($$self, currentGuess, $$value => $$invalidate(9, $currentGuess = $$value));
+    	component_subscribe($$self, word, $$value => $$invalidate(9, $word = $$value));
     	validate_store(games, 'games');
     	component_subscribe($$self, games, $$value => $$invalidate(1, $games = $$value));
     	validate_store(wonCount, 'wonCount');
@@ -14666,9 +14664,10 @@ var app = (function () {
     	validate_slots('Overlay', slots, []);
     	const dispatch = createEventDispatcher();
     	let { overlayActive } = $$props;
+    	let { won } = $$props;
 
     	const handleNewWord = () => {
-    		if ($currentGuess != $word.toUpperCase()) {
+    		if (!won) {
     			dispatch('alert', {
     				msg: `The Word Was: ${$word.toUpperCase()}`,
     				time: 3000
@@ -14679,7 +14678,7 @@ var app = (function () {
     		dispatch('reset-game');
     	};
 
-    	const writable_props = ['overlayActive'];
+    	const writable_props = ['overlayActive', 'won'];
 
     	Object_1.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Overlay> was created with unknown prop '${key}'`);
@@ -14689,6 +14688,7 @@ var app = (function () {
 
     	$$self.$$set = $$props => {
     		if ('overlayActive' in $$props) $$invalidate(0, overlayActive = $$props.overlayActive);
+    		if ('won' in $$props) $$invalidate(7, won = $$props.won);
     	};
 
     	$$self.$capture_state = () => ({
@@ -14701,9 +14701,9 @@ var app = (function () {
     		createEventDispatcher,
     		dispatch,
     		overlayActive,
+    		won,
     		handleNewWord,
     		$word,
-    		$currentGuess,
     		$games,
     		$wonCount,
     		$currentStreak,
@@ -14712,6 +14712,7 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ('overlayActive' in $$props) $$invalidate(0, overlayActive = $$props.overlayActive);
+    		if ('won' in $$props) $$invalidate(7, won = $$props.won);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -14726,6 +14727,7 @@ var app = (function () {
     		$highestStreak,
     		dispatch,
     		handleNewWord,
+    		won,
     		click_handler
     	];
     }
@@ -14733,7 +14735,7 @@ var app = (function () {
     class Overlay extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$2, create_fragment$2, safe_not_equal, { overlayActive: 0 });
+    		init(this, options, instance$2, create_fragment$2, safe_not_equal, { overlayActive: 0, won: 7 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -14748,6 +14750,10 @@ var app = (function () {
     		if (/*overlayActive*/ ctx[0] === undefined && !('overlayActive' in props)) {
     			console.warn("<Overlay> was created without expected prop 'overlayActive'");
     		}
+
+    		if (/*won*/ ctx[7] === undefined && !('won' in props)) {
+    			console.warn("<Overlay> was created without expected prop 'won'");
+    		}
     	}
 
     	get overlayActive() {
@@ -14755,6 +14761,14 @@ var app = (function () {
     	}
 
     	set overlayActive(value) {
+    		throw new Error("<Overlay>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get won() {
+    		throw new Error("<Overlay>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set won(value) {
     		throw new Error("<Overlay>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
@@ -14889,20 +14903,20 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[14] = list[i];
+    	child_ctx[16] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[17] = list[i];
+    	child_ctx[19] = list[i];
     	return child_ctx;
     }
 
-    // (53:4) {#each row as el}
+    // (54:4) {#each row as el}
     function create_each_block_1(ctx) {
     	let p;
-    	let t_value = /*el*/ ctx[17][0] + "";
+    	let t_value = /*el*/ ctx[19][0] + "";
     	let t;
 
     	const block = {
@@ -14910,28 +14924,28 @@ var app = (function () {
     			p = element("p");
     			t = text(t_value);
     			attr_dev(p, "class", "item svelte-mfemyd");
-    			set_style(p, "background-color", /*el*/ ctx[17][1]);
+    			set_style(p, "background-color", /*el*/ ctx[19][1]);
 
-    			set_style(p, "border", "2px solid " + (/*el*/ ctx[17][1] != 'transparent'
-    			? /*el*/ ctx[17][1]
+    			set_style(p, "border", "2px solid " + (/*el*/ ctx[19][1] != 'transparent'
+    			? /*el*/ ctx[19][1]
     			: '#353537'));
 
-    			add_location(p, file, 53, 5, 2208);
+    			add_location(p, file, 54, 5, 2231);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
     			append_dev(p, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*$gameState*/ 8 && t_value !== (t_value = /*el*/ ctx[17][0] + "")) set_data_dev(t, t_value);
+    			if (dirty & /*$gameState*/ 16 && t_value !== (t_value = /*el*/ ctx[19][0] + "")) set_data_dev(t, t_value);
 
-    			if (dirty & /*$gameState*/ 8) {
-    				set_style(p, "background-color", /*el*/ ctx[17][1]);
+    			if (dirty & /*$gameState*/ 16) {
+    				set_style(p, "background-color", /*el*/ ctx[19][1]);
     			}
 
-    			if (dirty & /*$gameState*/ 8) {
-    				set_style(p, "border", "2px solid " + (/*el*/ ctx[17][1] != 'transparent'
-    				? /*el*/ ctx[17][1]
+    			if (dirty & /*$gameState*/ 16) {
+    				set_style(p, "border", "2px solid " + (/*el*/ ctx[19][1] != 'transparent'
+    				? /*el*/ ctx[19][1]
     				: '#353537'));
     			}
     		},
@@ -14944,17 +14958,17 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(53:4) {#each row as el}",
+    		source: "(54:4) {#each row as el}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (52:3) {#each $gameState as row}
+    // (53:3) {#each $gameState as row}
     function create_each_block(ctx) {
     	let each_1_anchor;
-    	let each_value_1 = /*row*/ ctx[14];
+    	let each_value_1 = /*row*/ ctx[16];
     	validate_each_argument(each_value_1);
     	let each_blocks = [];
 
@@ -14978,8 +14992,8 @@ var app = (function () {
     			insert_dev(target, each_1_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*$gameState*/ 8) {
-    				each_value_1 = /*row*/ ctx[14];
+    			if (dirty & /*$gameState*/ 16) {
+    				each_value_1 = /*row*/ ctx[16];
     				validate_each_argument(each_value_1);
     				let i;
 
@@ -15012,7 +15026,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(52:3) {#each $gameState as row}",
+    		source: "(53:3) {#each $gameState as row}",
     		ctx
     	});
 
@@ -15035,25 +15049,28 @@ var app = (function () {
     	let current;
 
     	overlay = new Overlay({
-    			props: { overlayActive: /*overlayActive*/ ctx[0] },
-    			$$inline: true
-    		});
-
-    	overlay.$on("alert", /*alert_handler*/ ctx[7]);
-    	overlay.$on("reset-game", /*resetGame*/ ctx[5]);
-    	overlay.$on("toggle", /*toggleOverlay*/ ctx[4]);
-    	header = new Header({ $$inline: true });
-    	header.$on("toggle-overlay", /*toggleOverlay*/ ctx[4]);
-
-    	alert = new Alert({
     			props: {
-    				alertActive: /*alertActive*/ ctx[1],
-    				alertMessage: /*alertMessage*/ ctx[2]
+    				overlayActive: /*overlayActive*/ ctx[0],
+    				won: /*won*/ ctx[1]
     			},
     			$$inline: true
     		});
 
-    	let each_value = /*$gameState*/ ctx[3];
+    	overlay.$on("alert", /*alert_handler*/ ctx[8]);
+    	overlay.$on("reset-game", /*resetGame*/ ctx[6]);
+    	overlay.$on("toggle", /*toggleOverlay*/ ctx[5]);
+    	header = new Header({ $$inline: true });
+    	header.$on("toggle-overlay", /*toggleOverlay*/ ctx[5]);
+
+    	alert = new Alert({
+    			props: {
+    				alertActive: /*alertActive*/ ctx[2],
+    				alertMessage: /*alertMessage*/ ctx[3]
+    			},
+    			$$inline: true
+    		});
+
+    	let each_value = /*$gameState*/ ctx[4];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -15062,9 +15079,10 @@ var app = (function () {
     	}
 
     	keyboard = new Keyboard({ $$inline: true });
-    	keyboard.$on("disable-alert", /*disable_alert_handler*/ ctx[8]);
-    	keyboard.$on("toggle-overlay", /*toggleOverlay*/ ctx[4]);
-    	keyboard.$on("alert", /*alert_handler_1*/ ctx[9]);
+    	keyboard.$on("disable-alert", /*disable_alert_handler*/ ctx[9]);
+    	keyboard.$on("won-game", /*won_game_handler*/ ctx[10]);
+    	keyboard.$on("toggle-overlay", /*toggleOverlay*/ ctx[5]);
+    	keyboard.$on("alert", /*alert_handler_1*/ ctx[11]);
 
     	const block = {
     		c: function create() {
@@ -15086,13 +15104,13 @@ var app = (function () {
     			div2 = element("div");
     			create_component(keyboard.$$.fragment);
     			attr_dev(div0, "class", "container svelte-mfemyd");
-    			add_location(div0, file, 50, 2, 2128);
+    			add_location(div0, file, 51, 2, 2151);
     			attr_dev(div1, "class", "game svelte-mfemyd");
-    			add_location(div1, file, 49, 1, 2107);
+    			add_location(div1, file, 50, 1, 2130);
     			attr_dev(div2, "class", "keyboard-container svelte-mfemyd");
-    			add_location(div2, file, 58, 1, 2376);
+    			add_location(div2, file, 59, 1, 2399);
     			attr_dev(main, "class", "svelte-mfemyd");
-    			add_location(main, file, 44, 0, 1877);
+    			add_location(main, file, 45, 0, 1894);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -15120,14 +15138,15 @@ var app = (function () {
     		p: function update(ctx, [dirty]) {
     			const overlay_changes = {};
     			if (dirty & /*overlayActive*/ 1) overlay_changes.overlayActive = /*overlayActive*/ ctx[0];
+    			if (dirty & /*won*/ 2) overlay_changes.won = /*won*/ ctx[1];
     			overlay.$set(overlay_changes);
     			const alert_changes = {};
-    			if (dirty & /*alertActive*/ 2) alert_changes.alertActive = /*alertActive*/ ctx[1];
-    			if (dirty & /*alertMessage*/ 4) alert_changes.alertMessage = /*alertMessage*/ ctx[2];
+    			if (dirty & /*alertActive*/ 4) alert_changes.alertActive = /*alertActive*/ ctx[2];
+    			if (dirty & /*alertMessage*/ 8) alert_changes.alertMessage = /*alertMessage*/ ctx[3];
     			alert.$set(alert_changes);
 
-    			if (dirty & /*$gameState*/ 8) {
-    				each_value = /*$gameState*/ ctx[3];
+    			if (dirty & /*$gameState*/ 16) {
+    				each_value = /*$gameState*/ ctx[4];
     				validate_each_argument(each_value);
     				let i;
 
@@ -15193,18 +15212,19 @@ var app = (function () {
     	let $letterColors;
     	let $gameState;
     	validate_store(guessNumber, 'guessNumber');
-    	component_subscribe($$self, guessNumber, $$value => $$invalidate(10, $guessNumber = $$value));
+    	component_subscribe($$self, guessNumber, $$value => $$invalidate(12, $guessNumber = $$value));
     	validate_store(currentGuess, 'currentGuess');
-    	component_subscribe($$self, currentGuess, $$value => $$invalidate(11, $currentGuess = $$value));
+    	component_subscribe($$self, currentGuess, $$value => $$invalidate(13, $currentGuess = $$value));
     	validate_store(word, 'word');
-    	component_subscribe($$self, word, $$value => $$invalidate(12, $word = $$value));
+    	component_subscribe($$self, word, $$value => $$invalidate(14, $word = $$value));
     	validate_store(letterColors, 'letterColors');
-    	component_subscribe($$self, letterColors, $$value => $$invalidate(13, $letterColors = $$value));
+    	component_subscribe($$self, letterColors, $$value => $$invalidate(15, $letterColors = $$value));
     	validate_store(gameState, 'gameState');
-    	component_subscribe($$self, gameState, $$value => $$invalidate(3, $gameState = $$value));
+    	component_subscribe($$self, gameState, $$value => $$invalidate(4, $gameState = $$value));
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('App', slots, []);
     	let overlayActive = false;
+    	let won = false;
 
     	const toggleOverlay = () => {
     		$$invalidate(0, overlayActive = !overlayActive);
@@ -15307,9 +15327,9 @@ var app = (function () {
     	let alertMessage = '';
 
     	const setAlert = (msg, time = 2000) => {
-    		$$invalidate(1, alertActive = true);
-    		$$invalidate(2, alertMessage = msg);
-    		setTimeout(() => $$invalidate(1, alertActive = false), time);
+    		$$invalidate(2, alertActive = true);
+    		$$invalidate(3, alertMessage = msg);
+    		setTimeout(() => $$invalidate(2, alertActive = false), time);
     	};
 
     	const writable_props = [];
@@ -15319,7 +15339,8 @@ var app = (function () {
     	});
 
     	const alert_handler = e => setAlert(e.detail.msg, e.detail.time);
-    	const disable_alert_handler = () => $$invalidate(1, alertActive = false);
+    	const disable_alert_handler = () => $$invalidate(2, alertActive = false);
+    	const won_game_handler = () => $$invalidate(1, won = true);
     	const alert_handler_1 = e => setAlert(e.detail.msg, e.detail.time);
 
     	$$self.$capture_state = () => ({
@@ -15335,6 +15356,7 @@ var app = (function () {
     		words,
     		onMount,
     		overlayActive,
+    		won,
     		toggleOverlay,
     		resetGame,
     		alertActive,
@@ -15349,8 +15371,9 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ('overlayActive' in $$props) $$invalidate(0, overlayActive = $$props.overlayActive);
-    		if ('alertActive' in $$props) $$invalidate(1, alertActive = $$props.alertActive);
-    		if ('alertMessage' in $$props) $$invalidate(2, alertMessage = $$props.alertMessage);
+    		if ('won' in $$props) $$invalidate(1, won = $$props.won);
+    		if ('alertActive' in $$props) $$invalidate(2, alertActive = $$props.alertActive);
+    		if ('alertMessage' in $$props) $$invalidate(3, alertMessage = $$props.alertMessage);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -15359,6 +15382,7 @@ var app = (function () {
 
     	return [
     		overlayActive,
+    		won,
     		alertActive,
     		alertMessage,
     		$gameState,
@@ -15367,6 +15391,7 @@ var app = (function () {
     		setAlert,
     		alert_handler,
     		disable_alert_handler,
+    		won_game_handler,
     		alert_handler_1
     	];
     }
