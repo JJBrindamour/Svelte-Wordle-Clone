@@ -15,7 +15,7 @@
 		overlayActive = !overlayActive
 	}
 
-	onMount(() => {if ($won) setTimeout(toggleOverlay, 2500)})
+	onMount(() => {if ($won || $guessNumber == 5) setTimeout(toggleOverlay, 2500)})
 
 	const resetGame = () => {
 		$gameState = [
@@ -45,7 +45,7 @@
 </script>
 
 <main>
-	<Overlay on:alert={e => setAlert(e.detail.msg, e.detail.time)} on:reset-game={resetGame} on:toggle={toggleOverlay} {overlayActive} {won} />
+	<Overlay on:alert={e => setAlert(e.detail.msg, e.detail.time)} on:reset-game={resetGame} on:toggle={toggleOverlay} {overlayActive}/>
 	<Header on:toggle-overlay={toggleOverlay} />
 	<Alert {alertActive} {alertMessage} />
 

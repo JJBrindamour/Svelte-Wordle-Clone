@@ -1,6 +1,6 @@
 <script>
-  import { games, wonCount, currentStreak, highestStreak, won } from '../stores/user'
-  import { currentGuess, word } from '../stores/game'
+  import { wonCount, currentStreak, highestStreak, won, gameCount } from '../stores/user'
+  import { currentGuess, word, guessNumber } from '../stores/game'
 
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
@@ -8,7 +8,7 @@
   export let overlayActive
 
   const handleNewWord = () => {
-    if (!$won) {dispatch('alert', {msg: `The Word Was: ${$word.toUpperCase()}`, time: 3000})}
+    if ($won == false && $guessNumber < 5) {dispatch('alert', {msg: `The Word Was: ${$word.toUpperCase()}`, time: 3000})}
     dispatch('toggle')
     dispatch('reset-game')
   }
@@ -25,12 +25,12 @@
 
       <div class="stats">
         <div class="stat">
-          <p class="big">{Object.keys($games).length}</p>
+          <p class="big">{$gameCount}</p>
           <p class="small">Played</p>
         </div>
 
         <div class="stat">
-          <p class="big">{Math.floor($wonCount / Object.keys($games).length || 0)}</p>
+          <p class="big">{Math.floor(($wonCount / $gameCount || 0) * 100)}</p>
           <p class="small">Win %</p>
         </div>
 
