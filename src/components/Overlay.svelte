@@ -1,7 +1,6 @@
 <script>
   import { games, wonCount, currentStreak, highestStreak } from '../stores/user'
-  import { word } from '../stores/game'
-  import { words } from '../words'
+  import { currentGuess, word } from '../stores/game'
 
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
@@ -9,10 +8,9 @@
   export let overlayActive
 
   const handleNewWord = () => {
+    if ($currentGuess != $word.toUpperCase()) {dispatch('alert', {msg: `The Word Was: ${$word.toUpperCase()}`, time: 3000})}
     dispatch('toggle')
     dispatch('reset-game')
-    dispatch('alert', {msg: `The Word Was: ${$word.toUpperCase()}`, time: 5000})
-    $word = words[Math.floor(Math.random() * (words.length - 1))]
   }
 </script>
 

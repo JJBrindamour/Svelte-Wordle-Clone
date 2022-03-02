@@ -5,7 +5,7 @@
     import { createEventDispatcher } from 'svelte'
     const dispatch = createEventDispatcher()
 
-    $: won = $currentGuess == word
+    let won = false
 
     const validateGuess = guess => {
         if (guess.length == 5 && words.includes(guess.toLowerCase())) return true
@@ -37,14 +37,16 @@
         }
 
 
-        if (won) {
-            dispatch('alert', {text: 'Splendid'})
+        if ($currentGuess == $word.toUpperCase()) {
+            dispatch('alert', {msg: 'Splendid'})
+            dispatch('toggle-overlay')
+            won = true
         }
+
         if ($guessNumber < 5) $guessNumber += 1
         else {
-            dispatch('alert', {msg: `The Word Was: ${$word.toUpperCase()}`, time: 5000})
+            dispatch('alert', {msg: `The Word Was: ${$word.toUpperCase()}`, time: 3000})
             dispatch('toggle-overlay')
-            console.log(won)
         }
         $currentGuess = ''
     }

@@ -3,14 +3,18 @@
 	import Keyboard from "./components/Keyboard.svelte"
 	import Overlay from "./components/Overlay.svelte";
 	import Alert from "./components/Alert.svelte"
-	import { gameState, guessNumber, currentGuess } from "./stores/game"
+	import { gameState, guessNumber, currentGuess, letterColors, word } from "./stores/game"
+	import { words } from "./words"
+
+	import { onMount } from "svelte"
 
 	let overlayActive = false
-
 
 	const toggleOverlay = () => {
 		overlayActive = !overlayActive
 	}
+
+	onMount(() => {if ($currentGuess == $word.toUpperCase()); setTimeout(toggleOverlay, 2500)})
 
 	const resetGame = () => {
 		$gameState = [
@@ -21,7 +25,9 @@
 			[['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent']],
 			[['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent'], ['', 'transparent']],
 		]
-		
+
+		$letterColors = ['#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384', '#818384']
+		$word = words[Math.floor(Math.random() * (words.length - 1))]
 		$currentGuess = ''
   	$guessNumber = 0
 	}
