@@ -21,7 +21,7 @@ highestStreak.subscribe(
   (value) => (localStorage.wordle_clone_highestStreak = String(value))
 );
 
-export const won = writable(parseInt(localStorage.wordle_clone_won) || false);
+export const won = writable(Boolean(localStorage.wordle_clone_won) || false);
 won.subscribe((value) => (localStorage.wordle_clone_won = String(value)));
 
 export const gameCount = writable(

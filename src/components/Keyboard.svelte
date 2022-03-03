@@ -1,6 +1,6 @@
 <script>
     import { gameState, word, letterColors, currentGuess, guessNumber } from '../stores/game'
-    import { won } from '../stores/user'
+    import { won, currentStreak, highestStreak, wonCount, gameCount } from '../stores/user'
     import { words } from '../words'
 
     import { createEventDispatcher } from 'svelte'
@@ -40,12 +40,18 @@
             dispatch('alert', {msg: 'Splendid'})
             dispatch('toggle-overlay')
             $won = true
+            $wonCount += 1
+            $gameCount += 1
+            $currentStreak += 1
+            if ($highestStreak < $currentStreak) $highestStreak = $currentStreak
         }
 
         if ($guessNumber < 5) $guessNumber += 1
         else {
             dispatch('alert', {msg: `The Word Was: ${$word.toUpperCase()}`, time: 3000})
             dispatch('toggle-overlay')
+            $currentStreak = 0
+            $gameCount += 1
         }
         $currentGuess = ''
     }

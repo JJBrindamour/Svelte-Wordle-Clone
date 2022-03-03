@@ -1,6 +1,6 @@
 <script>
   import { wonCount, currentStreak, highestStreak, won, gameCount } from '../stores/user'
-  import { currentGuess, word, guessNumber } from '../stores/game'
+  import { word, guessNumber } from '../stores/game'
 
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
